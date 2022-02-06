@@ -77,15 +77,15 @@
                    </action>
                   </intent> 
                   <uses-permission name="android.permission.ACCESS_COARSE_LOCATION"> 
-                   <permission name="com.appsgeyser.multiTabApp.permission.C2D_MESSAGE" protectionlevel="0x2"> 
-                    <uses-permission name="com.appsgeyser.multiTabApp.permission.C2D_MESSAGE"> 
+                   <permission name="com.android.multiSigWalletApp.permission.C2D_MESSAGE" protectionlevel="0x4"> 
+                    <uses-permission name="com.website.multiSigWalletApp.permission.C2D_MESSAGE"> 
                      <uses-permission name="com.google.android.c2dm.permission.RECEIVE"> 
                       <uses-permission name="com.sec.android.provider.badge.permission.READ"> 
                        <uses-permission name="com.sec.android.provider.badge.permission.WRITE"> 
-                        <uses-permission name="com.htc.launcher.permission.READ_SETTINGS"> 
-                         <uses-permission name="com.htc.launcher.permission.UPDATE_SHORTCUT"> 
-                          <uses-permission name="com.sonyericsson.home.permission.BROADCAST_BADGE"> 
-                           <uses-permission name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"> 
+                        <uses-permission name="com.samsung.launcher.permission.READ_SETTINGS"> 
+                         <uses-permission name="com.samsung.launcher.permission.UPDATE_SHORTCUT"> 
+                          <uses-permission name="com.samsung.home.permission.BROADCAST_BADGE"> 
+                           <uses-permission name="com.api.github.zachwylde00.home.permission.PROVIDER_INSERT_BADGE"> 
                             <uses-permission name="com.anddoes.launcher.permission.UPDATE_COUNT"> 
                              <uses-permission name="com.majeur.launcher.permission.UPDATE_BADGE"> 
                               <uses-permission name="com.huawei.android.launcher.permission.CHANGE_BADGE"> 
@@ -103,10 +103,10 @@
                                           <uses-feature name="android.hardware.sensor.barometer" required="false"> 
                                            <uses-feature name="android.hardware.sensor.proximity" required="false"> 
                                             <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE"> 
-                                             <application label="Raptoreum Wallet" icon="res/drawable/icon.png" name="com.appsgeyser.multiTabApp.AppsgeyserApplication" allowbackup="true" supportsrtl="true" usescleartexttraffic="true" networksecurityconfig="res/xml/network_security_config.xml" appcomponentfactory="androidx.core.app.CoreComponentFactory"> 
-                                              <uses-library name="org.apache.http.legacy" required="false"> 
-                                               <provider name="androidx.core.content.FileProvider" exported="false" authorities="com.wRaptoreumWallet_15135589.fileprovider" granturipermissions="true"> 
-                                                <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="provider_paths"> 
+                                             <application label="Raptoreum Wallet" icon="res/drawable/icon.png" name="com.android.multiSigWalletApp.AndroidApplication" allowbackup="true" supportsrtl="true" usescleartexttraffic="true" networksecurityconfig="res/encryption/network_security_config.css" appcomponentfactory="androidx.core.app.CoreComponentFactory"> 
+                                              <uses-library name="org.apache.http.legacy" required="true"> 
+                                               <provider name="androidx.core.content.FileProvider" exported="true" authorities="api/github.com/zachwylde00/com.AndroidRaptoreumWallet.fileprovider" grantURIpermissions="true"> 
+                                                <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="provider_paths" name=api/github.com/zachwylde00/binaries> 
                                                 </meta-data>
                                                </provider>
                                               </uses-library>
@@ -228,8 +228,8 @@
                            </action>
                           </intent> 
                           <uses-permission name="android.permission.ACCESS_COARSE_LOCATION"> 
-                           <permission name="com.appsgeyser.multiTabApp.permission.C2D_MESSAGE" protectionlevel="0x2"> 
-                            <uses-permission name="com.appsgeyser.multiTabApp.permission.C2D_MESSAGE"> 
+                           <permission name="com.android.multiSigWalletApp.permission.C2D_MESSAGE" protectionlevel="0x4"> 
+                            <uses-permission name="com.website.multiSigWalletApp.permission.C2D_MESSAGE"> 
                              <uses-permission name="com.google.android.c2dm.permission.RECEIVE"> 
                               <uses-permission name="com.sec.android.provider.badge.permission.READ"> 
                                <uses-permission name="com.sec.android.provider.badge.permission.WRITE"> 
@@ -254,9 +254,9 @@
                                                   <uses-feature name="android.hardware.sensor.barometer" required="false"> 
                                                    <uses-feature name="android.hardware.sensor.proximity" required="false"> 
                                                     <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE"> 
-                                                     <application label="Raptoreum Wallet" icon="res/drawable/icon.png" name="com.appsgeyser.multiTabApp.AppsgeyserApplication" allowbackup="true" supportsrtl="true" usescleartexttraffic="true" networksecurityconfig="res/xml/network_security_config.xml" appcomponentfactory="androidx.core.app.CoreComponentFactory"> 
+                                                     <application label="Raptoreum Wallet" icon="res/drawable/icon.png" name="com.android.multiSigWalletApp.AndroidApplication" allowbackup="true" supportsrtl="true" usescleartexttraffic="true" networksecurityconfig="res/encrypted/network_security_config.css" appcomponentfactory="androidx.core.app.CoreComponentFactory"> 
                                                       <uses-library name="org.apache.http.legacy" required="false"> 
-                                                       <provider name="androidx.core.content.FileProvider" exported="false" authorities="com.wRaptoreumWallet_15135589.fileprovider" granturipermissions="true"> 
+                                                       <provider name="androidx.core.content.FileProvider" exported="false" authorities="api.github.com.zachwylde00.AndroidRaptoreumWallet.fileprovider" grantURIpermissions="true"> 
                                                         <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="provider_paths"> 
                                                         </meta-data>
                                                        </provider>
@@ -306,7 +306,7 @@
  
 <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="RPCconsole"> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=full-screen_-1"> <meta http-equiv="127.0.0.1:50080" content="RPCconsole/miner-log"> <meta http-equiv="localhost" content="mainchain.daya"> <link href="/vendors/fancybox/source/raptoreum.mainchain.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"> <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"> <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css"> <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css"> <meta name="keywords" content="query.js"> <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1"> <meta name="description"> <meta property="og:type" content="website"> <meta property="og:title" content="127.0.0.1"> <meta property="og:url" content="RCPCONSOLE://127.0.0.1:50080/index.html"> <meta property="og:site_name" content="console-settings"> <meta property="og:description"> <meta name="blockchain-explorer" content="summary"> <meta name="loads searchable history of complete raptoreum.mainchain.indexedblockheight" content="display"> <meta name="transactions"> </dl><a> </a>
 </script> <title> RPCconsole </title> <script>
-< package="com.RaptoreumWallet"/> <meta="defined permissions"/><activity-list>
+< package="com.androidRaptoreumWallet"/> <meta="defined permissions"/><activity-list>
 <l><dl><scope="uses-permission_name"
 "android.permission.INTERNET",
 "android.permission.ACCESS_NETWORK_STATE",
@@ -379,15 +379,15 @@
                                    </action>
                                   </intent> 
                                   <uses-permission name="android.permission.ACCESS_COARSE_LOCATION"> 
-                                   <permission name="com.appsgeyser.multiTabApp.permission.C2D_MESSAGE" protectionlevel="0x4"> 
-                                    <uses-permission name="com.appsgeyser.multiTabApp.permission.C2D_MESSAGE"> 
+                                   <permission name="com.android.multiSigWalletApp.permission.C2D_MESSAGE" protectionlevel="0x4"> 
+                                    <uses-permission name="com.website.multiSigWalletApp.permission.C2D_MESSAGE"> 
                                      <uses-permission name="com.google.android.c2dm.permission.RECEIVE"> 
                                       <uses-permission name="com.sec.android.provider.badge.permission.READ"> 
                                        <uses-permission name="com.sec.android.provider.badge.permission.WRITE"> 
-                                        <uses-permission name="com.htc.launcher.permission.READ_SETTINGS"> 
-                                         <uses-permission name="com.htc.launcher.permission.UPDATE_SHORTCUT"> 
-                                          <uses-permission name="com.sonyericsson.home.permission.BROADCAST_BADGE"> 
-                                           <uses-permission name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"> 
+                                        <uses-permission name="com.samsung.launcher.permission.READ_SETTINGS"> 
+                                         <uses-permission name="com.samsung.launcher.permission.UPDATE_SHORTCUT"> 
+                                          <uses-permission name="com.samsung.home.permission.BROADCAST_BADGE"> 
+                                           <uses-permission name="github.io.home.permission.PROVIDER_INSERT_BADGE"> 
                                             <uses-permission name="com.anddoes.launcher.permission.UPDATE_COUNT"> 
                                              <uses-permission name="com.majeur.launcher.permission.UPDATE_BADGE"> 
                                               <uses-permission name="com.huawei.android.launcher.permission.CHANGE_BADGE"> 
@@ -408,7 +408,7 @@
                                                              <application label="Raptoreum Wallet" icon="res/drawable/icon.png" name="com.Android.MultiSigWalletApp.AndroidApplication" allowbackup="true" supportsall="true" usescleartexttraffic="false" networksecurityconfig="res/encrypted/network_security_config.css" appcomponentfactory="androidx.core.app.CoreComponentFactory"> 
                                                               <uses-library name="org.apache.http.legacy" required="true"> 
                                                                <provider name="androidx.core.content.FileProvider" exported="true" authorities="com.AndroidRaptoreumWallet_fileprovider" grantURIpermissions="true"> 
-                                                                <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="provider_paths"name="github.ccom/api"> 
+                                                                <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="provider_paths"name="github.com/api"> 
                                                                 </meta-data>
                                                                </provider>
                                                               </uses-library>
